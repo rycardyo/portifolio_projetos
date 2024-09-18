@@ -11,6 +11,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
+	<style>
+        .bullet-list {
+            list-style-type: disc; /* Mantém os bullet points */
+            padding-left: 10px; /* Ajusta o espaçamento dos bullets */
+        }
+        .image-object img {
+            height: 120px; 
+            width: auto;
+			vertical-align: left; /* Alinha verticalmente com os bullets */
+        }
+    </style>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -22,7 +33,7 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>Ricardo Ataide</strong></a>
+									<a href="index.html" class="logo"></a>
 
 								</header>
 
@@ -30,44 +41,67 @@
 								<section id="banner">
 									<div class="content">
 										<header>
-											<h1>Olá! Seja muito bem vindo (a) ao meu portifolio de projetos em análise e ciência de dados.</h1>
-											
+											<h1>Olá! Que bom te ver aqui.</h1>
+											<h2>Aqui você encontrará: </h2>
+											<h3 class = ".bullet-list">
+												<li>
+													<a href="#about_me"> 
+														<b>Sobre mim</b>
+													</a>
+												</li>
+												<li>
+													<a href="#skills"> 
+														<b>Habilidades Profissionais</b>
+													</a>
+												</li>
+												<li>
+													<a href="#experience"> 
+														<b>Experências Profissionais</b>
+													</a>
+												</li>
+												<li>
+													<a href="#projects"> 
+														<b>Projetos de Portifólio</b>
+													</a>
+												</li>
+												<li>
+													<a href="#contacts"> 
+														<b>Meus Contatos</b>
+													</a>
+												</li>
+											</h3>
+									
+
 										</header>
-										<p> Aqui, você poderá conhecer um poucos mais sobre mim enquanto demonstro minhas habilidades em resolver problemas 
-											de negócio utilizando conceitos e ferramentas da Ciência de Dados.</p>
-										<p></p>
-										<p>Você vai encontrar também, minhas experiências profissionais, habilidades, ferramentas e conceitos envolvendo ciência de dados.</p> 
-
-										<p>	Sinta-se a vontade para entrar em contato através dos links ao fim da página.</p>
-
+									
 									</div>
-									<span class="image object">
-										<img src="images/eu.png" alt="" />
+									<span class=".image-object">
+										<img src="images/eu.png" />
 									</span>
 								</section>
 
 								<!-- Sobre mim-->
 								<section>
 
-									<header class="main">
+									<header class="main", id = "about_me">
 										<h1>Sobre Mim</h1>
 						
 									</header>
 
 									<!-- Content -->
 										<h2 id="content">Me chamo Ricardo</h2>
-										<p>Atualmente estou cursando o útlimo período em engenheira de computação na Universidade Federal de Goiás.</p>
+										<p>Formado em Engenharia de Computação pela Universidade Federal de Goiás, me considero um verdadeiro nerd, apaixonado por ciências exatas, o que me motiva é resolver problemas cada vez mais complexos, de uma maneira simples e elegante.</p>
 
 										<p> Meu primeiro contato contato com a ciencia de dados se deu pela disciplina de inteligencia computacional, a qual foi uma experiencia de amor a primeira vista. Desde então cursei mais 2 disciplinas optativas relacionadas a área, uma de deep learning e outra de redes neurais profundas, onde cursei como aluno especial do programa de mestrado da UFG. Além disso também desenvolvi ao longo de 1 ano um projeto de iniciação cientifica, onde tive oportnunidade de defender meu projeto de conclusão de curso, com o desenvolvimento de um modelo de machine learning, que também é listado abaixo.  </p>
 									
-										<p>Atualmente atuo como Analista de dados construindo indicadores e análises para servir de suporte nas tomadas de decisão da organização. </p>
+										<p>Atualmente atuo como Analista de dados, construindo soluções de dados que auxiliem na tomada de decisões. </p>
 									
 										<p> Hoje procuro me desenvolver diariamente na área de dados, buscando me tornar um cientista de dados, atuando no desenvolvimento de modelos de machine learning, envolvendo métodos avançados e tecnologia de ponta, para resolver os mais diversos problemas de negócio das empresas, gerando também, significativos impactos para a sociedade. </p>
 			
 									</section>		
 							<!-- Section -->
 								<section>
-									<header class="major">
+									<header class="major" id="skills">
 										<h2>Habilidades</h2>
 									</header>
 									<div class="features">
@@ -125,7 +159,7 @@
 
 							<!-- Section -->
 							<section>
-								<header class="main">
+								<header class="main", id="experience">
 									<h1>Experiências Profissionais</h1>
 								</header>
 							
@@ -156,34 +190,35 @@
 								
 								</section>
 
-								<!-- 								<section>
+								<section id="projects">
 									<header class="major">
 										<h2>Projetos em Ciência de Dados</h2>
 									</header>
 									<div class="posts">
 										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-											<h3>Interdum aenean</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<a href="https://github.com/rycardyo/RossmanSalesPrediction" class="image"><img src="images/image_forecast.jpg" alt="" /></a>
+											<h3>Rossman Sales Prediction</h3>
+											<p>A Rossmann é uma das maiores redes de drograria da europa, e seu CEO deseja realizar uma reforma em suas lojas, com o objetivo de melhorar a experiência com o cliente.
+												Para saber o valor que se terá disponível para a realização da reforma, foi solicitada a estimativa do valor das vendas 
+												de cada loja por um período de 6 semanas. 
+												Neste projeto foi então desenvolvido um algoritmo de Machine Learning, para realizar a previsão das 
+												vendas de cada uma das lojas da companhia para as próximas 6 semanas.
+												
+												<strong>O algoritmo alcançou uma precisão com um desvio de +/- 16% do valor real vendido por cada uma das lojas.</strong>
+
+											</p>
 											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<h3>Nulla amet dolore</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
+												<li><a href="https://github.com/rycardyo/RossmanSalesPrediction" class="button">Saiba mais</a></li>
 											</ul>
 										</article>
 										
+										
 									</div>
 								</section>
-								-->
+								
 
 
-								<section>
+								<section id="contacts">
 									<header class="major">
 										<h2>Entre em Contato</h2>
 									</header>
@@ -195,7 +230,6 @@
 										
 									</ul>
 								</section>		
-
 						</div>
 					</div>
 
